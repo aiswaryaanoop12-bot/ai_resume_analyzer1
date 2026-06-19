@@ -1,0 +1,197 @@
+/* =========================
+   RESET / BASE STYLES
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* =========================
+   BODY BACKGROUND
+========================= */
+body {
+    background: radial-gradient(circle at top, #0b1220, #050814);
+    color: #e5e7eb;
+    min-height: 100vh;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 50px;
+    background: #0f172a;
+    border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+    color: #38bdf8;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-text {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+/* =========================
+   MAIN WRAPPER
+========================= */
+.wrapper {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero-card {
+    padding: 45px;
+    background: linear-gradient(135deg, #0f172a, #111c33);
+    border-radius: 18px;
+    border: 1px solid #1e293b;
+    text-align: center;
+}
+
+.hero-card h1 {
+    font-size: 36px;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+    font-size: 16px;
+    color: #94a3b8;
+    line-height: 1.7;
+}
+
+/* =========================
+   UPLOAD SECTION
+========================= */
+.upload-section {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input[type="file"] {
+    padding: 14px;
+    background: #0b1220;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    color: white;
+}
+
+/* =========================
+   BUTTON
+========================= */
+button {
+    padding: 14px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   INFO CARDS (ABOUT SECTION)
+========================= */
+.card {
+    margin-top: 30px;
+    padding: 25px;
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+}
+
+.card h2 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   RESULT SECTION
+========================= */
+#resultBox {
+    margin-top: 30px;
+}
+
+/* =========================
+   RESULT CARD
+========================= */
+.result-card {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    padding: 25px;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+/* =========================
+   ATS SCORE HIGHLIGHT
+========================= */
+.ats-score {
+    font-size: 34px;
+    font-weight: bold;
+    color: #38bdf8;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(56, 189, 248, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+.result-card h3 {
+    margin-top: 18px;
+    color: #e5e7eb;
+    border-left: 4px solid #38bdf8;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+/* =========================
+   LIST STYLES
+========================= */
+.result-card ul {
+    margin-top: 10px;
+    padding-left: 22px;
+}
+
+.result-card li {
+    margin: 6px 0;
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

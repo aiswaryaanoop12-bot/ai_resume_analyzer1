@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- PAGE TITLE -->
+    <title>AI Resume Analyzer</title>
+
+    <!-- LINK CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     NAVIGATION BAR
+========================= -->
+<div class="nav">
+    <div class="logo">ResumeAI</div>
+    <div class="nav-text">Smart ATS Resume Analyzer</div>
+</div>
+
+<!-- =========================
+     MAIN WRAPPER
+========================= -->
+<div class="wrapper">
+
+    <!-- =========================
+         HERO SECTION
+    ========================= -->
+    <div class="hero-card">
+
+        <h1>AI Resume Analyzer</h1>
+
+        <p>
+            Instantly analyze your resume using AI. Get ATS score, strengths, weaknesses,
+            missing skills, and improvement suggestions in seconds.
+        </p>
+
+        <!-- UPLOAD SECTION -->
+        <div class="upload-section">
+
+            <!-- FILE INPUT -->
+            <input type="file" id="fileInput" />
+
+            <!-- ANALYZE BUTTON -->
+            <button onclick="uploadResume()">Analyze Resume</button>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         ABOUT SECTION
+    ========================= -->
+    <div class="card">
+
+        <h2>About This Tool</h2>
+
+        <p>
+            This AI Resume Analyzer evaluates your resume using advanced AI.
+            It helps students and job seekers understand how recruiters view their resumes
+            and suggests improvements to increase job chances.
+        </p>
+
+    </div>
+
+    <!-- =========================
+         RESULT SECTION
+    ========================= -->
+    <div id="resultBox"></div>
+
+</div>
+
+<!-- =========================
+     JAVASCRIPT FILE
+========================= -->
+<script src="script.js"></script>
+
+</body>
+
+</html>
